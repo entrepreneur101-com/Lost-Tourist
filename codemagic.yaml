@@ -9,6 +9,6 @@ workflows:
       - name: Get packages
         script: flutter pub get
       - name: Build APK
-        script: flutter build apk --release
+        script: flutter build apk --release --no-shrink
     artifacts:
       - build/**/outputs/**/*.apk
